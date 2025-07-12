@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our collection of LDS temples from around the world, featuring both historical and modern temples.">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/templeslarge.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Temple Album</h1>
+            <nav>
+                <button aria-label="Show all temples" onclick="filterImages('all')">Home</button>
+                <button aria-label="Show old temples" onclick="filterImages('old')">Old</button>
+                <button aria-label="Show new temples" onclick="filterImages('new')">New</button>
+                <button aria-label="Show large temples" onclick="filterImages('large')">Large</button>
+                <button aria-label="Show small temples" onclick="filterImages('small')">Small</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="album" class="grid">
+            
+            <div class="grid-item old large">
+                <img src="images/temple.jpg" alt="Lima, Peru Temple">
+                <p>Lima, Peru Temple</p>
+            </div>
+            <div class="grid-item new small">
+                <img src="images/temple.jpg" alt="Lima, Peru Temple">
+                <p>Lima, Peru Temple</p>
+            </div>
+            <div class="grid-item old small">
+                <img src="images/temple.jpg" alt="Lima, Peru Temple">
+                <p>Lima, Peru Temple</p>
+            </div>
+
+            
+            <div class="grid-item new large">
+                <img src="images/temple.jpg" alt="Lima, Peru Temple">
+                <p>Lima, Peru Temple</p>
+            </div>
+            <div class="grid-item old large">
+                <img src="images/temple.jpg" alt="Lima, Peru Temple">
+                <p>Lima, Peru Temple</p>
+            </div>
+            <div class="grid-item new small">
+                <img src="images/temple.jpg" alt="Lima, Peru Temple">
+                <p>Lima, Peru Temple</p>
+            </div>
+
+            
+            <div class="grid-item old small">
+                <img src="images/temple.jpg" alt="Lima, Peru Temple">
+                <p>Lima, Peru Temple</p>
+            </div>
+            <div class="grid-item new large">
+                <img src="images/temple.jpg" alt="Lima, Peru Temple">
+                <p>Lima, Peru Temple</p>
+            </div>
+            <div class="grid-item old large">
+                <img src="images/temple.jpg" alt="Lima, Peru Temple">
+                <p>Lima, Peru Temple</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024 &#128150; Logan Oyolo &#127757; Peru</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/temples.js"></script>
+</body>
+</html>
