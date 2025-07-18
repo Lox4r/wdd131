@@ -71,3 +71,25 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
+
+.navbar nav a {
+
+    background: var(--background-color); 
+    color: var(--primary-color);
+
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar nav a:hover {
+
+    background: var(--hover-color); 
+    color: var(--primary-color);  
+    transform: scale(1.05);
+}
