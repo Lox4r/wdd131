@@ -113,3 +113,8 @@ footer {
 footer p {
     font-size: 13px;
 }
+
+nav ul li a:hover {
+    color: #ADD8E6; 
+    text-decoration: underline;
+}
