@@ -55,3 +55,60 @@
     <script src="scripts/places.js" defer></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore England: a land of rich history, vibrant culture, stunning landscapes, and current weather data. Discover key facts about its area, population, and capital, London.">
+    <meta name="author" content="Logan Oyolo">
+    <title>England – Discover History & Culture</title>
+    <link rel="stylesheet" href="styles/places.css">
+    <link rel="stylesheet" href="styles/placesphone.css">
+    
+</head>
+<body>
+    <header>
+        <img src="images/logo-200w.png"
+             alt="England Logo"
+             srcset="images/logo-200w.png 200w"
+             sizes="200px"
+             width="200" height="100" class="header-logo">
+        <h1>England – Discover History & Culture</h1>
+    </header>
+
+    <main>
+        <section id="data-top-left">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 130,279 sq km</li>
+                <li><strong>Population:</strong> 56,489,800</li>
+                <li><strong>Capital:</strong> London</li>
+                <li><strong>Language:</strong> English</li>
+                <li><strong>Currency:</strong> Pound Sterling (£)</li>
+                <li><strong>Time Zone:</strong> UTC+0 (GMT)</li>
+                <li><strong>Calling Code:</strong> +44</li>
+                <li><strong>Internet TLD:</strong> .uk</li>
+            </ul>
+        </section>
+
+        <section id="weather-bottom-right">
+            <h2>Weather</h2>
+            <ul>
+                <li><strong>Temperature:</strong> 15°C</li>
+                <li><strong>Conditions:</strong> Cloudy</li>
+                <li><strong>Wind:</strong> 10 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="wind-chill">Calculating...</span></li>
+                <li id="wind-chill-note">Wind chill calculation is not applicable for current conditions.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2024 &#128150; Logan Oyolo &#127757; Peru</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/places.js" defer></script>
+</body>
+</html>
