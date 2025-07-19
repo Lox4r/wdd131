@@ -1,0 +1,59 @@
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    header {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    main {
+        flex: 1;
+        background: url('../images/england.jpg') no-repeat center center/cover;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #data-top-left {
+        position: relative;  
+        top: auto;
+        left: 10px;
+        right: 10px;
+        width: 95%;  
+        padding: 8px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #data-bottom-right {
+        position: relative;  
+        bottom: auto;
+        left: 10px;
+        right: 10px;
+        width: 95%;
+        padding: 8px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
