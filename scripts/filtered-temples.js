@@ -18,7 +18,7 @@ const temples = [
         location: "Payson, Utah, United States",
         dedicated: "2015, June, 7",
         area: 96630,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
     },
     {
         templeName: "Yigo Guam",
@@ -52,7 +52,7 @@ const temples = [
 
 function displayTemples(filteredTemples) {
     const container = document.getElementById("templeContainer");
-    container.innerHTML = "";
+    container.innerHTML = "<h1>Latter-day Saint Temples</h1>";
 
     filteredTemples.forEach(temple => {
         const templeCard = `
@@ -82,6 +82,17 @@ function filterTemples(criteria) {
     displayTemples(filtered);
 }
 
-filterTemples('all');
+document.addEventListener('DOMContentLoaded', () => {
+    displayTemples(temples);
 
-document.getElementById("lastModified").textContent = new Date(document.lastModified).toLocaleString();
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const filterCriteria = event.target.dataset.filter;
+            filterTemples(filterCriteria);
+        });
+    });
+});
+
+document.getElementById("lastModified").textContent = new Date().toLocaleString();
