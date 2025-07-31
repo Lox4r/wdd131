@@ -1,0 +1,197 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Color Variables */
+:root {
+    --primary-color: #A0522D; /* Sienna Brown */
+    --secondary-color: #D2B48C; /* Tan */
+    --background-light: #F8F8F8; /* Light Gray */
+    --text-dark: #36454F; /* Charcoal Gray */
+    --text-light: #ffffff; /* White */
+}
+
+/* Font Variables */
+:root {
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    color: var(--text-light);
+    margin: 0;
+    font-size: 2rem;
+}
+
+.site-logo {
+    max-width: 150px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: var(--text-light); /* White background for main content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    color: var(--text-dark);
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Color Schema Section */
+.color-schema-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.color-schema-section li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.color-box {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+.primary-accent { background-color: var(--primary-color); }
+.secondary-accent { background-color: var(--secondary-color); }
+.background-color { background-color: var(--background-light); }
+.text-color { background-color: var(--text-dark); }
+
+/* Typography Section */
+.font-example {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 2px 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fcfcfc;
+    color: var(--primary-color);
+    margin-left: 5px;
+}
+
+.font-heading { font-family: var(--heading-font); }
+.font-body { font-family: var(--body-font); }
+
+/* Wireframe Section */
+.wireframe-diagram {
+    background-color: #f5f5f5;
+    border: 1px dashed var(--secondary-color);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    border-radius: 5px;
+}
+
+.wireframe-diagram pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    line-height: 1.4;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.85em;
+}
+
+/* Basic Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    main {
+        padding: 1.5rem 0.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    .wireframe-diagram pre {
+        font-size: 0.75em;
+    }
+}
